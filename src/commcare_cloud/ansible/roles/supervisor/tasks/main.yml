@@ -7,7 +7,6 @@
     path: /usr/bin/{{ item }}
     state: link
     src: /usr/local/bin/{{ item }}
-    force: yes
   with_items:
     - supervisord
     - supervisorctl

@@ -95,7 +95,7 @@ read -p "(Please note that if this command fails midway, you can run this comman
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-    commcare-cloud $env_name deploy-stack --skip-check --skip-tags=users -e 'CCHQ_IS_FRESH_INSTALL=1' -c local --quiet --branch=master
+    commcare-cloud $env_name deploy-stack --skip-check --skip-tags=users -e 'CCHQ_IS_FRESH_INSTALL=1' -c local --quiet 
 else
     exit
 fi
